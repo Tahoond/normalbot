@@ -1,12 +1,11 @@
 const Discord = require("discord.js");
-const client = new Discord.Client
+const bot = new Discord.Client();
 
-client.on("ready", () => {
+const config = require("./config.json")
 
-  client.user.setActivity('watching memes')
-
+bot.on('ready', () => {
+  bot.user.setGame('test bot');
+  console.log(`good day to you mate.`);
 });
 
-});
-
-client.login("NTE5NTY1OTgxNzY5NjYyNDY3.DuhLxg.QyBDxUC346M9fJzRDyJ9p7Zu7LA");
+bot.login(NTE5NTY1OTgxNzY5NjYyNDY3.DuhLxg.QyBDxUC346M9fJzRDyJ9p7Zu7LA);
